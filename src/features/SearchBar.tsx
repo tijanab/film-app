@@ -1,7 +1,16 @@
+import { useState } from "react";
+
 const SearchBar = () => {
-    return (
-        <p>A searchbar</p>
-    )
+	const [searchValue, setSearchValue] = useState("");
+	
+  return (
+    <input
+      type="text"
+      id="search"
+      placeholder="Search movies"
+			onChange={event => setSearchValue(event.target.value)}
+			value={searchValue} />
+  );
 }
 
 export default SearchBar
