@@ -1,15 +1,20 @@
 import React from 'react';
-import './App.css';
 import Header from './features/Header';
 import Main from './features/Main';
+import styled from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Header />
       <Main />
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  text-align: center;
+`
+
 
 export default App;
